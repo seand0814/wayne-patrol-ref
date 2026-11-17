@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wayne Ordinances</title>
+<meta name="description" content="Wayne Township Ordinance Field Guide for Patrol — offline reference.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f14" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Wayne Code">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-row">
+    <button type="button" id="back" class="back" aria-label="Back" hidden>‹ Back</button>
+    <a id="apptitle" class="apptitle" href="#/">Wayne Code</a>
+  </div>
+  <form id="searchform" class="searchform" role="search" action="#" autocomplete="off">
+    <label for="q" class="visually-hidden">Search call type, keyword or section number</label>
+    <input id="q" type="search" inputmode="search" enterkeyhint="search" placeholder="Search: call type, keyword or § number" autocapitalize="off" autocorrect="off" spellcheck="false">
+  </form>
+</header>
+
+<main id="view" tabindex="-1">
+  <p class="loading">Loading…</p>
+</main>
+
+<div id="status" class="visually-hidden" role="status" aria-live="polite"></div>
+
+<nav class="tabbar" aria-label="Main">
+  <a href="#/" data-tab="home">Home</a>
+  <a href="#/favorites" data-tab="favorites">★ Favorites</a>
+  <a href="#/about" data-tab="about">About</a>
+</nav>
+
+<script src="search.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
